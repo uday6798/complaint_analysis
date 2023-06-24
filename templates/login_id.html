@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>employees login page
+        </title> 
+        <style >
+            #topbar{
+                margin: 0;
+                background-color: rgb(19, 40, 109);
+                padding-left: 15px;
+                padding-top: 6px;
+            }
+            .m {
+                margin: 0;
+                align-items:center;
+                font-size: 24px;
+                padding: 20px;
+                font-weight: 600;
+            }
+        </style>
+    </head>
+    <body style="margin: 0;background-color: khaki;">
+        <div id ="topbar">
+            <span> <img src="icon.jpg" alt="bank icon"  height="100"/> </span>
+            <span class="m" ><a href="./pro1.html" target="blank"  style="text-decoration: none;"> COMPLAINT FORM</a></span>
+            <span class="m" ><a href="./check_complaints_status.html" target="blank"  style="text-decoration: none;"> COMPLAINT STATUS</a></span>
+            <span class="m" ><a href="./login_id.html" target="blank"  style="text-decoration: none;"> LOGIN ID</a></span>
+        </div>
+        <h1>welcome to ahha...! Bank</h1>
+        <h3>enter name and password to login </h3>
+        <form action="{{url_for('login')}}" method='POST'>
+            
+            <div>
+                employee_id<br>
+                <input type="text" name="employee_id" placeholder='employee id'><br>
+                password<br>
+                <input type="password" name="password" placeholder='password'><br>
+            </div>
+            <input type="submit" name="login" value="Sign In">
+
+        </form>
+            <div align="center"> <h3> {{ msg }} </h3></div>
+    </body>
+    <footer align ='bottom'>
+        Copyright 2020 reserved to uday chowdary adusumilli.legal action will be taken if you use the code with out permission.
+    </footer>
+</html>
